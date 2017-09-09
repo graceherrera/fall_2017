@@ -23,9 +23,19 @@ int main()
   int totalLower = 0;
   letterType letterObj[52]; //just capitals and lowers each it's own thing
 
-  openFile(input, output);
-  count(input, letterObj, totalCapital, totalLower);
-  printResult(output, letterObj, totalCapital, totalLower);
+//trying random things out
+  char ch;
+  int num;
+
+  cout << "read in char" << endl;
+  cin >> ch;
+  num = static_cast<int>(ch);
+  cout << "the char is: " << ch << " the num is: " << num << endl;
+
+
+  // openFile(input, output);
+  // count(input, letterObj, totalCapital, totalLower);
+  // printResult(output, letterObj, totalCapital, totalLower);
 
   input.close();
   output.close();
