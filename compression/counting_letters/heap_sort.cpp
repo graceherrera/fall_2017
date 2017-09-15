@@ -5,23 +5,23 @@
 
 using namespace std;
 
-void heapify(int arr[], int n, int i)
-{
-  int largest = i; //initialize largest as root
-  int l = 2*i + 1;
-  int r = 2*i + 2;
-
-//if the left child is larger than root
-  if (l < n && arr[r] > arr[largest]) {largest = l;}
-//if the right child is larger than the largest so far
-  if (r < n && arr[r] > arr[largest]) {largest = r;}
-//if largest is not root
-  if (largest != i)
+  void heapify(int arr[], int n, int i)
   {
-    swap(arr[i], arr[largest]);
-    heapify(arr, n, largest);
+    int largest = i; //initialize largest as root
+    int l = 2*i + 1;
+    int r = 2*i + 2;
+
+  //if the left child is larger than root
+    if (l < n && arr[r] > arr[largest]) {largest = l;}
+  //if the right child is larger than the largest so far
+    if (r < n && arr[r] > arr[largest]) {largest = r;}
+  //if largest is not root
+    if (largest != i)
+    {
+      swap(arr[i], arr[largest]);
+      heapify(arr, n, largest);
+    }
   }
-}
 
 void heapsort(int arr[], int n)
 {
