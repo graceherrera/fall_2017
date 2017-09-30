@@ -1,0 +1,9 @@
+1. Create an Array that has all the characters in ascii
+2. The array should keep track of each count of each character
+3. Use a high priority queue to create a tree so that I can assign unique
+binary value to each instance of a character
+4. output new file with binary values instead of characters to lessen size the
+file should have a very unique type of extension.
+5. Should be able to uncompress file to original form
+
+working currently on test.cpp
