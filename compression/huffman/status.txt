@@ -1,0 +1,4 @@
+huffman.cpp takes in a name of input file and outputs the frequency
+of each character in that file to another file with the same name + the extension .mcp
+
+test_huffman is a program in which I am testing two small arrays - it works - but I'm not sure how

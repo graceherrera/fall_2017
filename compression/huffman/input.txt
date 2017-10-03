@@ -1,0 +1,4 @@
+This is a simple example of a file with sentences.
+And multiple lines.
+Please process this whole thing.
+Please.
